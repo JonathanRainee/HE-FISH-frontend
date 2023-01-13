@@ -28,8 +28,8 @@ class _HomePageState extends State<HomePage> {
   late Future<List<Fishes>> fishList;
 
   Future<List<Fishes>> fetchFishes() async{
-    // String url = "http://10.0.2.2:3000/fishes";
-    String url = "http://localhost:3000/fishes";
+    String url = "http://10.0.2.2:3000/fishes";
+    // String url = "http://localhost:3000/fishes";
 
 
     var resp = await http.get(Uri.parse(url));

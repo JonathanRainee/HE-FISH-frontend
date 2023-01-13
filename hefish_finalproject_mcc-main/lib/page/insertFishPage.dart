@@ -42,8 +42,8 @@ class _InsertFishPageState extends State<InsertFishPage> {
 
   void addFish() async{
     User user = new User(id: 234, username: "fasdf", email: "fasdf@gmail.com", token: "asdfasd");
-    String url = "http://localhost:3000/fishes/insert-new-fish";
-    // String url = "http://10.0.2.2:3000/fishes/insert-new-fish";
+    // String url = "http://localhost:3000/fishes/insert-new-fish";
+    String url = "http://10.0.2.2:3000/fishes/insert-new-fish";
     var req = http.MultipartRequest("POST", Uri.parse(url));
 
     switch(fishTypeValue){

@@ -32,8 +32,8 @@ class _FishesPageState extends State<FishesPage> with TickerProviderStateMixin {
   late Future<List<Fishes>> fishList;
 
   Future deleteFish(int id) async{
-    // String url = "http://10.0.2.2:3000/fishes/delete-fish";
-    String url = "http://localhost:3000/fishes/delete-fish";
+    String url = "http://10.0.2.2:3000/fishes/delete-fish";
+    // String url = "http://localhost:3000/fishes/delete-fish";
     var resp = await http.delete(Uri.parse(url),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode({
@@ -48,8 +48,8 @@ class _FishesPageState extends State<FishesPage> with TickerProviderStateMixin {
   }
 
   Future<List<Fishes>> fetchFishes() async{
-    // String url = "http://10.0.2.2:3000/fishes/all-fish";
-    String url = "http://localhost:3000/fishes/all-fish";
+    String url = "http://10.0.2.2:3000/fishes/all-fish";
+    // String url = "http://localhost:3000/fishes/all-fish";
 
 
     var resp = await http.get(Uri.parse(url));
